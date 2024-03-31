@@ -1,0 +1,92 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+body{
+  box-sizing: border-box;
+  
+}
+.App{
+  width: 100%;
+  background-color:white;
+  display: grid;
+  grid-template-rows: 15em auto;
+  overflow-x: hidden;
+}
+
+.header{
+  display: grid;
+  place-items: center;
+}
+
+.header-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+h1{
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+
+.search-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6em;
+}
+
+input{
+  padding: 1.5em 1em;
+  all: unset;
+  background-color: white;
+  box-shadow: 0 0 3px rgba(77, 73, 73, 0.5);
+  border-radius: 20px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5em;
+  padding: 0.5em;
+  
+}
+
+.card{
+  background-color: white;
+  box-shadow: 0 0 3px rgba(77, 73, 73, 0.5);
+  border-radius: 15px;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.emoji{
+  font-size: 30px;
+}
+
+.search-btn{
+  margin-left: 2.5em;
+  all: unset;
+  padding: 1em 1em;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 3px rgba(77, 73, 73, 0.5);
+  cursor: pointer;
+
+}
+
+@media (min-width:600px) {
+  .container{
+  width: 70%;
+  margin-inline: auto;
+}
+  
+}
+
